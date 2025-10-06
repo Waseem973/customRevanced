@@ -9,6 +9,9 @@ on:
 
   workflow_dispatch:
 
+  schedule:
+    - cron: "0 0 * * 5" # Every Friday at 00:00 UTC
+
 jobs:
   run:
     permissions: write-all
